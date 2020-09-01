@@ -1,0 +1,175 @@
+@font-face {
+    font-family: 'Noto Sans SC';
+    src: url(../fonts/NotoSansSC-Regular.otf);
+}
+*{
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+    font-family: 'Noto Sans SC', sans-serif;
+}
+/* ==== GENERAL CLASSES ==== */
+.container{
+    width: 85%; 
+    margin: auto
+}
+.clear {clear: both}
+
+/* ==== START HEADER ==== */
+header{
+    background-image: url(../images/background.jpg); 
+    background-size: cover; 
+    background-attachment: fixed;     
+}
+nav{
+    
+}
+nav ul {
+    list-style: none; 
+}
+nav ul a{
+    padding: 15px 30px;
+    float: left;
+    color: #183f45;
+    font-weight: 700;
+    text-decoration: none; 
+    transition: 0.5s;
+}
+nav ul a i {
+    padding-right: 10px;
+}
+nav ul a:hover {
+    color: #47b0ac;
+    cursor: pointer; 
+}
+header .title{
+    padding: 8% 0; 
+    color: #b6dbb1;
+    font-size: 58px;
+    text-align: center;
+    width: 50%;
+    line-height: 1.7em;
+    text-transform: uppercase;
+}
+
+/* ==== START MUSIC ==== */
+#Music{
+    background-color: #000000e6;
+    text-align: center;
+    padding: 150px 0;
+}
+#Music #p_music{
+    color: #409aa7;
+    font-size: 30px; 
+    font-weight: 700; 
+    padding: 0 0 60px;
+}
+#Music .paging button, #math .buttons button{
+    padding: 6px 10px;
+    background-color: #302929;
+    font-weight: 700;
+    color: #5a5353;
+    border: none;
+    margin-top: 20px ; 
+    margin-right: 7px;
+    transition: 0.5s;
+}
+#Music .songs button
+{
+    padding: 12px 20px;
+    background-color: rgb(20, 10, 10);
+    font-family: 'Comic Sans MS', Garamond ,Georgia, 'Times New Roman' ;
+    font-weight: 700;
+    font-size: 19px ;
+    color: #f5f8f8;
+    border: none;
+    border-radius: 20px ; 
+    margin: 7px;
+    margin-bottom: 15px ; 
+    transition: 0.5s;
+}
+#Music .songs button:hover
+{
+    background-color: #252121;
+    color: #bbb; 
+    cursor: pointer; 
+}
+#Music.paging button:hover , #math .buttons button:hover {
+    background-color: #252121;
+    color: #bbb; 
+    cursor: pointer; 
+}
+label
+{
+    color:greenyellow ;
+    font-weight: 400 ; 
+    font-size: 18px ;
+    padding-bottom: 20px; 
+    margin-top: 20px ;
+}
+/* ==== START QUOTES ==== */
+#quotes{
+    background-color: #000000cb;
+    text-align: center;
+    padding: 170px 0;
+}
+#quotes #quote{
+    color: #409aa7;
+    font-size: 30px; 
+    font-weight: 700; 
+    padding: 0 0 60px;
+}
+#quotes .paging button, #math .buttons button{
+    padding: 6px 10px;
+    background-color: #302929;
+    font-weight: 700;
+    color: #5a5353;
+    border: none;
+    margin-right: 7px;
+    transition: 0.5s;
+}
+#quotes .paging button:hover , #math .buttons button:hover {
+    background-color: #252121;
+    color: #bbb; 
+    cursor: pointer; 
+}
+
+/* ==== START MATH SECTION ==== */
+#math {
+    background-color: rgba(0,0,0);
+    text-align: center;
+    padding: 170px 0;
+}
+#math .operation{
+    color: #8c8080; 
+    margin: 0 auto; 
+    width: 11%;
+}
+#math .operation div:not(:last-of-type){
+    float: left; 
+    padding-right: 20px;
+    font-size: 30px;
+}
+#math input {
+    width: 20%;
+    height: 38px;
+    margin: 20px 0;
+    text-align: center;
+}
+#result{
+    font-weight: 700 ; 
+    padding-bottom: 20px; 
+}
+/* ==== START FOOTER ==== */
+footer{
+    background-color: #181818;
+    text-align: center;
+    color: #5c5353;
+    padding: 10px 0;
+    letter-spacing: 2px;
+    font-size: 13px;
+}
+footer span{
+    color: #409aa7;
+    font-weight: 700;
+}

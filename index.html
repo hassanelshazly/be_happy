@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"> 
+        <title>Be Happy</title>
+        <link rel="shortcut icon" href="images/icon.png">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <header>
+            <!-- <embed id="happy" src="music/y2mate.com%20-%20bobby_mcferrin_dont_worry_be_happy_d-diB65scQU.mp3" loop="False" autostart="True" height="0"> -->
+            <nav>
+                <ul>   
+                    <a href="#Music"><li><i class="fas fa-play"></i>Let's Play Music</li></a>
+                    <a href="#quotes"><li><i class="fas fa-pen-alt"></i>Quotes</li></a> 
+                    <a href="#math"><li><i class="fas fa-puzzle-piece"></i>Play With Math</li></a>
+                   <!-- <a id="music-btn"><li><i class="fas fa-play"></i>Turn on/off Lovely Music</li></a> -->
+                    <div class="clear"></div>
+                </ul>
+            </nav>
+            <section class="title">
+                <div class="container">
+                    <p class="a">life is Short, </p>
+                    <p class="b">Smile while </p>
+                    <p class="c">you still have teeth</p>   
+                </div>
+            </section>
+        </header>
+        
+        <section id="Music">
+            <p id="p_music">Chosse a song to play
+            </p>
+            <div class="songs" >
+                <button id="8" onclick="play(8)">Don't Worry, Be Happy</button>
+            </div>
+            <div class="songs">
+                <button id="1" onclick="play(1)">FireWorks</button>
+                <button id="2" onclick="play(2)">Roar</button>
+                <button id="3" onclick="play(3)">Shape of You</button>
+                <button id="4" onclick="play(4)">Hello</button>
+                <button id="5" onclick="play(5)">See You Again</button>
+                <button id="6" onclick="play(6)">We Own It</button>
+                <button id="7" onclick="play(7)">The Way I Am</button>
+            </div>
+            <label id="song_name"></label>
+            <div class="paging">
+                <button onclick="Resume()">Resume</button>
+                <button onclick="play_random()">Random</button>
+                <button onclick="pause()">Pause</button>                
+            </div>
+        </section>
+
+        <section id="quotes">
+            <p id="quote">In the long run, competition makes us better... it drives innovation.
+            </p>
+            <div class="paging">
+                <button id="1" onclick="quote(1)">1</button>
+                <button id="2" onclick="quote(2)">2</button>
+                <button id="3" onclick="quote(3)">3</button>                
+            </div>
+        </section>
+        
+        <section id="math">
+            <div class="operation">
+                <div id="fst-num">30</div>
+                <div>*</div>
+                <div id="sec-num">5</div>
+                <div class="clear"></div>
+            </div>
+            <div class="clear"></div>
+            <input id="multip" type="text">
+            <div id="result"></div>
+            <div class="buttons">
+                <button id="check">Try</button>
+                <button onclick="randomNo()">Refresh</button>
+                <button onclick="multiplication()">Result</button>
+            </div>
+        </section>
+        
+        <footer> 
+            <p>Design by <span>IDT'19 IT commitee</span>, All &copy;Copyrights Reserved 2018</p>
+        </footer>
+        <script src="js/custom.js"></script>
+    </body>
+</html>
